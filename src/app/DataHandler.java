@@ -7,7 +7,7 @@ public class DataHandler {
 
     private final Lock lock = new ReentrantLock();
 
-    public synchronized int modify (int num) {
+    public int modify (int num) {
         lock.lock();
 
         try {
